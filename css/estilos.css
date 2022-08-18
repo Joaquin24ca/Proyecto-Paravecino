@@ -439,43 +439,43 @@ background-color: #FFFFFF;
 }
 
 /*hasta aqui es nosotros*/
-.article__text{
-    position: relative;
+
+.contacto{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  
+    
+    
 }
-.textlado {
-   position: absolute;
-    color: white;
-    font-size:30px;
-    display: inline-block;
-    top:50px;
-    left: 150px;
+
+.textimage{
+    width: 50px;
+    transform: scale(0.5);
+}
+
+.form{
+    width: 40%;
+    margin-top: 50px;
+    height: 100vh
 
 }
-.textimage{
-  transform: scale(0.5);
-  margin-right: 800px;
+
+.text__lado{
+    color: white;
+    font-size: 80px;
+   
 }
+
 input,
 textarea {
-    width: 90%;
-    margin: 15px 20px;
-    font-size: px;
+    width: 80%;
+    margin : 20px 50px;
+    font-size: 20px;
     border: none;
-    height: 40px;
+    padding: 7px;
+  
 
-}
-
-.form {
-    width: 200px;
-    margin-left: 700px;
-    box-sizing: border-box;
-    position: relative;
-
-}
-
-.formulario {
-    position: absolute;
-    bottom:60px ;
 }
 
 textarea {
@@ -490,9 +490,6 @@ textarea {
     color: white;
 }
 
-.header--z {
-    z-index: 2;
-}
 
 /*hasta aqui es contactanos*/
 
@@ -587,7 +584,7 @@ textarea {
    }
    .header{
     height: 200px;
-    width: 100vh;
+    width: 580px;
     
    }
    .nav__link{
@@ -597,20 +594,29 @@ textarea {
    }
 
 .div{
+display: flex;
 flex-direction: column;
 margin-bottom: 700px;
-width: 100vh;
+
+
 
 }
+.principal{
+   height: 80vh;
+   width: 150vw;
+}
+
+.principal__parrafo{
+    margin-left: 50px;
+}
+
+
 .image{
     margin-top: 100px;
 }
 .div__imagen1{
   margin:50px 90px;
 
-}
-.principal__parrafo{
-    margin-left: 50px;
 }
 
 
@@ -624,28 +630,24 @@ width: 100vh;
     "problema2"
     "problema3"
     ;
-    margin-block: 500px;
+    margin-block: 400px;
     margin-inline: 50px;
-    justify-content: space-between
    
+   width: 150vw;
 }
   .principal{
-
-   margin: 40px 0;
-   
+   margin: 40px 10px;
    
   }
   .principal__titulo{
    margin-left: 50px;
   }
   .seccion{
-    height: 1300px;
-    width: 100vh;
+ height: 220vh;
+    width: 180vw;
     
   }
-  .section__grid{
-    width: 100vh;
-  }
+  
 
   .servicios{
     flex-direction: column;
@@ -653,7 +655,7 @@ width: 100vh;
    
   }
   .servicios__division{
-    margin:30px 120px;
+    margin:40px 120px;
   }
  .footer{
     width: 580px;
@@ -662,6 +664,58 @@ width: 100vh;
     margin-inline: 20px;
  }
 }
+
+/*@media(min-width:600px){
+.header{
+
+    font-size: 10px;
+    height: 200px;
+}
+
+.nav{
+    flex-direction: column;
+    
+}
+
+
+.div{
+    display: flex;
+    flex-direction: column-reverse;
+    height: 100vh;
+    margin-top: 100px;
+}
+.principal{
+    margin-inline: 30px;
+}
+.image{
+    margin-inline: 50px;
+}
+.section__grid{
+    height: 100vh;
+   width: 100vw;
+   
+}
+.grids{
+margin-inline: 40px;
+}
+
+
+
+.servicios{
+    flex-direction: column;
+    width: 100vw}
+.servicios__division{
+    width:70%;
+    margin-block: 50px;
+    margin-inline: 80px;
+
+}
+
+.seccion{
+    height: 170vh;
+}
+}
+*/
 @media(max-width:320px){
 
 
@@ -741,6 +795,29 @@ width: 400px;
 
 
 }
+  /* @media(min-width:600px){
+    .problemas{
+        flex-direction: column;
+        height: 100vh;
+       width: 100vw;
+       margin-inline: 50px;
+       margin-block: 20px;
+    }
+
+
+.problemas__imagen{
+    width: 100vw;
+}
+.ofrecemos{
+    margin-inline: 50px;
+}
+
+.soluciones{
+    height: 100vh;
+    margin-block: 200px;
+}
+}
+*/
 @media(max-width:320px){
 .main__grid{
 
@@ -798,4 +875,82 @@ margin-inline: 80px;
 .piepagina{
     height: 100px;
 }
+}
+@media(max-width:600px){
+
+    .main__grid{
+
+        grid-template-columns: repeat(1,2fr);
+        grid-template-rows: repeat(5,1fr);
+        grid-template-areas: 
+        " aside"
+        "naturalmente"
+        "mio"
+        "forum"
+        "piepagina"
+        ;
+        margin-block: 120px;
+
+
+
+}}
+
+
+
+
+
+
+
+@media(max-width:320px){
+  .contenedor{
+width: 580px;
+
+  }
+    .nosotros{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 120px;
+        margin-bottom: 80px;
+    }
+ 
+   .quienes__contenedor{
+   width: 580px;
+   }
+   .video{
+    margin-right: 40px;
+   }
+}
+@media(max-width:600px){
+    .nosotros{
+        flex-direction: column;
+        margin-inline: 80px;
+    }
+    .video{
+        margin-inline: 50px;
+    }
+}
+
+
+
+@media(max-width:320px){
+
+.contacto{
+display: flex;
+flex-direction: column;
+margin-inline: 50px;
+}
+.fondo{
+    width: 580px;
+}
+.textimage{
+   margin-inline: 80px;
+}
+
+}
+@media(max-width:600px){
+    .contacto{
+        flex-direction: column;
+        margin-inline: 50px;
+    }
 }
