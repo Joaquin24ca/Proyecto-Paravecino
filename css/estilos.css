@@ -456,11 +456,14 @@ background-color: #FFFFFF;
 }
 
 .form{
-    width: 40%;
+    width:40%;
     margin-top: 50px;
-    height: 100vh
+    height: 100vh;
+    margin-left:100px;
 
 }
+
+
 
 .text__lado{
     color: white;
@@ -470,18 +473,18 @@ background-color: #FFFFFF;
 
 input,
 textarea {
-    width: 80%;
+    width:75%;
     margin : 20px 50px;
     font-size: 20px;
     border: none;
-    padding: 7px;
+    padding: 5px;
   
 
 }
 
 textarea {
-    max-width: 400px;
-    min-width: 400px;
+    max-width: 300px;
+    min-width: 300px;
     max-height: 50px;
 }
 
@@ -490,6 +493,13 @@ textarea {
     background-color: #043263;
     color: white;
 }
+.formulario{
+    width: 75%;
+    border: 2px dashed rgba(255, 255, 255, 0.442);
+
+}
+
+    
 
 
 /*hasta aqui es contactanos*/
@@ -568,11 +578,6 @@ textarea {
 .forum__image:hover{
     transform: scale(1.2);
 }
-
-
-
-
-
 
 
 
@@ -678,26 +683,31 @@ margin-inline: 130px;
     flex-direction: column;
 }
 .nav__item{
-    margin-inline: 2px;
+    margin-inline: 1px;
+    font-size: 17px;
 }
 
 .div{
     display: flex;
     flex-direction: column-reverse;
-    height: 120vh;
+    height: 200vh;
     margin-top: 100px;
+}
+.image img {
+    width: 80%;
 }
 .principal{
     margin-inline: 30px;
 }
 
 .seccion{
-    height: 160vh;
+    height: 260vh;
+    
 }
 
 
 .section__grid{
-    height: 80vh;
+    height: 100vh;
     margin-bottom: 400px;
    width: 100vw;
    
@@ -723,7 +733,7 @@ margin-inline: 40px;
 }
 .servicios__division{
     width:70%;
-    margin-block: 50px;
+    margin-block: 10px;
   margin-inline: 50px;
 
 }
@@ -797,27 +807,31 @@ width: 400px;
 }
 .footer{
     width: 100vw;
+    
 }
 
 }
    @media screen and (max-width:600px){
 
 .header{
-    height: 200px;
+   width: 100vw;
+   height: 200px;
+
 }
 
     .problemas{
         flex-direction: column;
-        height: 130vh;
-       width: 100vw;
+        height: 100vh;
+       width: 80vw;
        margin-inline: 50px;
-       margin-block: 150px;
+       margin-block: 250px;
+       font-size:20px ;
        
     }
 
 
 .problemas__imagen{
-    width: 100vw;
+    width: 80vw;
 }
 .ofrecemos{
     margin-inline: 50px;
@@ -825,117 +839,39 @@ width: 400px;
 }
 
 .soluciones{
-    height: 100%;
-    margin-block: 200px;
+  height: 100vh;
+  margin-block: 200px;
    
 
 }
 .solucion1{
     display: flex;
-    align-items: center;
-    gap:40px;
-    margin-right:15px;
-   margin:0 auto;
+    flex-direction: column;
+    gap:20px;
+    font-size: 20px;
+    margin: 0 auto;
+    text-align: center;
     
 }
 .solucion2{
     display: flex;
-    justify-content: space-around;
-    gap:40px;
+    flex-direction: column;
+    gap:20px;
+    font-size: 20px;
+    text-align: center;
     margin:0 auto;
 }
 .solucion3{
     display: flex;
-    justify-content: space-around;
-    gap:40px;
+    flex-direction: column;
+    gap:20px;
+    font-size: 20px;
+    text-align: center;
     margin:0 auto;
 }
 
 
    }
-
-@media(max-width:320px){
-.main__grid{
-
-grid-template-columns: repeat(1,2fr);
-grid-template-rows: repeat(5,1fr);
-grid-template-areas: 
-" aside"
-"naturalmente"
-"mio"
-"forum"
-"piepagina"
-;
-}
-
-.aside{
-    display: flex;
-    flex-direction: column;
-    margin-top: 150px;
-    width: 500px;
-}
-.aside__image{
-    margin-inline: 80px;
-}
-.naturalmente{
-    display: flex;
-   flex-direction: column;
- width: 500px;
- height: 450px;
-}
-.naturalmente__image{
-margin-inline: 80px;
-    height: 250px;
-    width: 300px;
-}
-
-.mio{
-    display: flex;
-    flex-direction: column;
-    width: 500px;
-    height:200px;
-}
-.mio__image{
-   margin-inline: 30px;
-}
-.forum{
-    display: flex;
-    flex-direction: column;
-    width: 500px;
-    height: 450px;
-}
-.forum__image{
-    margin-inline: 120px;
-    margin-top: 80px;
-}
-.piepagina{
-    height: 100px;
-}
-}
-@media(max-width:600px){
-
-    .main__grid{
-
-        grid-template-columns: repeat(1,2fr);
-        grid-template-rows: repeat(5,1fr);
-        grid-template-areas: 
-        " aside"
-        "naturalmente"
-        "mio"
-        "forum"
-        "piepagina"
-        ;
-        margin-block: 120px;
-
-
-
-}}
-
-
-
-
-
-
 
 @media(max-width:320px){
   .contenedor{
@@ -957,7 +893,7 @@ width: 580px;
     margin-right: 40px;
    }
 }
-@media(max-width:600px){
+@media screen and (max-width:600px){
 
 .header--z{
     display: flex;
@@ -969,8 +905,11 @@ width: 580px;
         margin-inline: 80px;
     }
     .video{
-        margin-inline: 50px;
-    }
+        width: 100%;    }
+
+      .video__deco{
+        width: 95%;
+      }  
 }
 
 
@@ -983,16 +922,147 @@ flex-direction: column;
 margin-inline: 50px;
 }
 .fondo{
-    width: 580px;
+    width: 100%;
+}
+.formulario{
+    width: 40vw;
 }
 .textimage{
    margin-inline: 80px;
 }
 
 }
-@media(max-width:600px){
+@media screen and (max-width:600px){
+
+
+    
     .contacto{
         flex-direction: column;
-        margin-inline: 50px;
+
+    }
+    .form{
+        width: 70vw;
+       height: 130vh;
+       margin-left: 30px;
+    }
+     
+.formulario{
+    width: 120%;
+}
+
+    .formulario__item{
+        width: 80%;
+    }
+    .formulario textarea{
+        width: 50%;
     }
 }
+@media(max-width:320px){
+    .main__grid{
+    
+    grid-template-columns: repeat(1,2fr);
+    grid-template-rows: repeat(5,1fr);
+    grid-template-areas: 
+    " aside"
+    "naturalmente"
+    "mio"
+    "forum"
+    "piepagina"
+    ;
+    }
+    
+    .aside{
+        display: flex;
+        flex-direction: column;
+        margin-top: 150px;
+        width: 500px;
+    }
+    .aside__image{
+        margin-left: 100px;
+    }
+    .naturalmente{
+        display: flex;
+       flex-direction: column;
+     width: 500px;
+     height: 450px;
+    }
+    .naturalmente__image{
+    margin-inline: 80px;
+        height: 250px;
+        width: 300px;
+    }
+    
+    .mio{
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        height:200px;
+    }
+    .mio__image{
+       margin-inline: 30px;
+    }
+    .forum{
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        height: 450px;
+    }
+    .forum__image{
+        margin-inline: 120px;
+        margin-top: 80px;
+    }
+    .piepagina{
+        height: 100px;
+    }
+    }
+    @media screen and (max-width:600px){
+    
+        .main__grid{
+    
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: repeat(5,1fr);
+            grid-template-areas: 
+            " aside"
+            "naturalmente"
+            "mio"
+            "forum"
+            "piepagina"
+            ;
+            margin-block: 120px;
+    }
+    .aside{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .naturalmente{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .mio{
+        width: 100vw; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .mio p {
+        text-align: center;
+    }
+    .forum{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }   
+    
+    
+    
+    .piepagina{
+        height: 100px;
+    }
+    }
