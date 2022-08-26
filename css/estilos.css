@@ -678,19 +678,18 @@ margin-inline: 130px;
 
 @media screen and (max-width:600px){
 
-    
 .nav{
     flex-direction: column;
 }
 .nav__item{
     margin-inline: 1px;
-    font-size: 17px;
+    font-size: 15px;
 }
 
 .div{
     display: flex;
     flex-direction: column-reverse;
-    height: 200vh;
+    height: 150vh;
     margin-top: 100px;
 }
 .image img {
@@ -701,14 +700,14 @@ margin-inline: 130px;
 }
 
 .seccion{
-    height: 260vh;
+    height: 200vh;
     
 }
 
 
 .section__grid{
     height: 100vh;
-    margin-bottom: 400px;
+    margin-bottom: 250px;
    width: 100vw;
    
 }
@@ -733,7 +732,6 @@ margin-inline: 40px;
 }
 .servicios__division{
     width:70%;
-    margin-block: 10px;
   margin-inline: 50px;
 
 }
@@ -821,7 +819,7 @@ width: 400px;
 
     .problemas{
         flex-direction: column;
-        height: 100vh;
+        height: 80vh;
        width: 80vw;
        margin-inline: 50px;
        margin-block: 250px;
@@ -832,6 +830,8 @@ width: 400px;
 
 .problemas__imagen{
     width: 80vw;
+    height: 50vh;
+
 }
 .ofrecemos{
     margin-inline: 50px;
@@ -840,7 +840,7 @@ width: 400px;
 
 .soluciones{
   height: 100vh;
-  margin-block: 200px;
+  margin-block: 300px;
    
 
 }
@@ -942,7 +942,7 @@ margin-inline: 50px;
     }
     .form{
         width: 70vw;
-       height: 130vh;
+       height: 100vh;
        margin-left: 30px;
     }
      
