@@ -238,6 +238,9 @@ ul li{
     top: 10px;
     border-top: 2px solid whitesmoke;
     color: white;
+    text-align: center;
+    padding: 2rem;
+    font-size: 15px;
 }
 
 .actual__titulo {
@@ -547,6 +550,8 @@ textarea {
     grid-area: piepagina;
     background-color: var(--colornegro);
     color:white;
+    text-align: center;
+    padding: 2rem;
 }
 .aside__image{
     width: 300px;
@@ -694,6 +699,8 @@ margin-inline: 130px;
 }
 .image img {
     width: 80%;
+    margin-top: 40px;
+    margin-inline: 30px;
 }
 .principal{
     margin-inline: 30px;
@@ -709,10 +716,6 @@ margin-inline: 130px;
     height: 100vh;
     margin-bottom: 250px;
    width: 90vw;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
    
 }
 .grids{
@@ -724,6 +727,7 @@ margin-inline: 130px;
     "problema2"
     "problema3"
     ;
+    margin-inline: 50px;
 }
 .actual{
     width: 90%;
@@ -737,6 +741,7 @@ margin-inline: 130px;
 .servicios__division{
     width:70%;
   margin-inline: 50px;
+  gap: 40px;
 
 }
 .footer{
@@ -835,7 +840,7 @@ width: 400px;
 .problemas__imagen{
     width: 80vw;
     height: 50vh;
-
+  
 }
 .ofrecemos{
     margin-inline: 50px;
@@ -847,7 +852,7 @@ width: 400px;
 .soluciones{
   height: 250vh;
   margin-block: 150px;
-   
+    
 
 }
 .solucion1{
@@ -940,17 +945,21 @@ margin-inline: 50px;
 }
 @media screen and (max-width:600px){
 
-
+ .textimage{
+   margin-left: 100px;
+ }
     
     .contacto{
         flex-direction: column;
 
     }
+
     .form{
         width: 70vw;
        height: 100vh;
        margin-left: 30px;
     }
+
      
 .formulario{
     width: 120%;
@@ -960,7 +969,7 @@ margin-inline: 50px;
         width: 80%;
     }
     .formulario textarea {
-        min-width: 300px;
+        width: 270px;
     }
 }
 @media(max-width:320px){
