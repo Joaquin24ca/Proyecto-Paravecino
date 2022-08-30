@@ -1,0 +1,31 @@
+{
+  "name": "proyecto-paravecino",
+  "version": "1.0.0",
+  "description": "Iniciando npm",
+  "main": "index.html",
+  "scripts": {
+    
+    "build-css": "node-sass --include-path scss css/style-scss.scss css/style-css.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Joaquin24ca/Proyecto-Paravecino.git"
+  },
+  "keywords": [
+    "npm",
+    "init"
+  ],
+  "author": "joaquin paravecino",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Joaquin24ca/Proyecto-Paravecino/issues"
+  },
+  "homepage": "https://github.com/Joaquin24ca/Proyecto-Paravecino#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}

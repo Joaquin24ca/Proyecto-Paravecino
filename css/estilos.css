@@ -1,87 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,700&display=swap');
 
 
-* {
+*{
     margin: 0;
     box-sizing: border-box;
     padding: 0;
-
-}
-
-
-:root {
-    --colornegro: #18181B;
-    --colorrosado: #FF0071;
-    --popins: 'Poppins', sans-serif;
-    --gris: #D8D8D8;
-    --plomo: #F1F2F3;
-}
-
-
-
-body {
-    padding: 90px 0px;
-    font-family: 'Poppins', sans-serif;
-    height: 100vh;
-}
-
-.centrado {
-    text-align: center;
-    font-size: 30px;
-}
-
-.header {
-    background-color: var(--colornegro);
-    height: 100px;
-    position: fixed;
-     width:  100vw;
-    top: 0;
-    left: 0;
-    border-bottom: 2px solid whitesmoke;
-z-index: 2;
- 
-}
-
+    font-family: 'Poppins', sans-serif;}
+:root{
+     
+        --colornegro: #18181B;
+        --colorrosado: #FF0071;
+        --popins: 'Poppins', sans-serif;
+        --gris: #D8D8D8;
+        --plomo: #F1F2F3}
+        body {
+            padding: 90px 0px;
+            height: 100vh;
+        }
+ .header {       
+background-color: var(--colornegro);
+ height: 100px;
+position: fixed;
+ width: 100vw;
+top: 0;
+left: 0;
+border-bottom: 2px solid whitesmoke;
+z-index: 2;}
 
 nav {
-    display: flex;
-   justify-content: space-between;
-    
-}
-
-.nav__link {
-    color:white;
-    text-decoration: none;
-}
+ display: flex;
+justify-content: space-between;}
 
 .nav__logo {
     font-size: 30px;
     font-weight: bold;
-    padding:20px;
+    padding: 20px;
     color: white;
     text-decoration: none;
-}
-h3{
-    font-size: 20px;
-}
-
-.nav__menu {
+  }
+  .nav__menu {
     display: flex;
     flex-direction: space-between;
     margin-right: 20px;
-    list-style: none;
-}
+    list-style: none;}
+    .nav__item {
+        font-size: 18px;
+        margin: 0 10px;
+        margin-top: 50px;
+        text-transform: uppercase;
+      }
 
-.nav__item {
-    font-size: 18px;
-    margin:0 10px;
-    margin-top: 50px;
-    text-transform: uppercase;
 
-}
 
 .nav__link {
     padding: 8px 12px;
+    color: white;
+    text-decoration: none;
 }
 
 .nav__link:hover {
@@ -192,14 +166,6 @@ background-color:#FAFAFA;
 width:300px;
 border-radius: 10px;
 }
-
-.problema1{
-grid-area: problema1;
-background-color:#FAFAFA;
-border-radius: 10px;
-
-}
-
 
  .problema2{
 grid-area: problema2;
@@ -658,8 +624,8 @@ margin-bottom: 700px;
    margin-left: 50px;
   }
   .seccion{
- height: 100vh;
-    width: 180vw;
+ height: 180vh;
+    width: 100vw;
     
   }
   
@@ -730,7 +696,7 @@ margin-inline: 130px;
     margin-inline: 50px;
 }
 .actual{
-    width: 90%;
+    width: 100%;
 }
 
 .servicios{
