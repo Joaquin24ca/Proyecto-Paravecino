@@ -33,6 +33,13 @@ body {
       padding: 20px;
       color: white;
       text-decoration: none; }
+    .header nav .nav__toggle {
+      color: white;
+      background: none;
+      border: none;
+      transform: scale(1.8);
+      padding: 30px 20px;
+      display: none; }
     .header nav .nav__menu {
       display: flex;
       flex-direction: space-between;
@@ -64,13 +71,14 @@ body {
   .div .principal {
     margin-left: 100px;
     margin-top: 100px;
-    color: #043263;
     font-family: "Poppins", sans-serif;
     font-weight: medium 500; }
+    .div .principal h1 {
+      color: #FF0071;
+      font-size: 20px; }
     .div .principal .principal__titulo {
       font-family: var(--popins);
-      font-size: 40px;
-      color: var(--colornegro); }
+      font-size: 40px; }
     .div .principal .principal__parrafo {
       font-size: 20px;
       margin-top: 40px;
@@ -82,7 +90,9 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 2fr);
   grid-template-rows: repeat(3, 1fr);
-  grid-template-areas: " actual problema1 problema1 problema1   " "actual problema2 problema2 problema2" "actual problema3 problema3 problema3";
+  grid-template-areas: " actual problema1 problema1 problema1   "
+ "actual problema2 problema2 problema2"
+ "actual problema3 problema3 problema3";
   margin-left: 100px;
   gap: 10px; }
   .section__grid .grids .actual {
@@ -153,6 +163,8 @@ body {
         margin-top: 30px;
         margin-left: 5px;
         background-position: center; }
+    .seccion .servicios .servicios__division h3 {
+      background-color: #FF0071; }
 
 .footer {
   background-color: var(--colornegro);
@@ -170,15 +182,15 @@ body {
   .header {
     height: 200px;
     width: 100%; }
-  .nav {
-    flex-direction: column; }
-    .nav .nav__menu .nav__item {
-      display: flex;
-      font-size: 80px;
-      margin-inline: 20px; }
-    .nav .nav__link {
-      color: white;
-      font-size: 15px; }
+    .header .nav {
+      flex-direction: column; }
+      .header .nav .nav__menu .nav__item {
+        display: flex;
+        font-size: 80px;
+        margin-inline: 20px; }
+      .header .nav .nav__link {
+        color: white;
+        font-size: 15px; }
   .div {
     display: flex;
     flex-direction: column;
@@ -198,7 +210,10 @@ body {
   .section__grid .grids {
     grid-template-columns: repeat(1, 3fr);
     grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: "actual" " problema1" "problema2" "problema3";
+    grid-template-areas: "actual"
+ " problema1"
+ "problema2"
+ "problema3";
     margin-block: 400px;
     margin-inline: 50px;
     width: 150vw; }
@@ -216,15 +231,35 @@ body {
   .header {
     height: 200px;
     width: 100%; }
-  .nav {
-    flex-direction: column; }
-    .nav .nav__menu .nav__item {
-      display: flex;
-      font-size: 50px;
-      margin-inline: 40px; }
-    .nav .nav__link {
-      color: white;
-      font-size: 15px; }
+    .header .nav {
+      flex-direction: column; }
+      .header .nav .nav__toggle {
+        display: block;
+        margin-left: auto;
+        cursor: pointer; }
+      .header .nav .nav__menu {
+        flex-direction: column;
+        align-items: center;
+        background-color: #2c3e50;
+        position: fixed;
+        left: 0;
+        top: 200px;
+        width: 100%;
+        padding: 20px 0;
+        height: 100%;
+        left: 0;
+        transition: left 0.3s; }
+      .header .nav .nav__menu--visible {
+        left: 100%; }
+      .header .nav .nav__item {
+        display: flex;
+        font-size: 50px;
+        margin-inline: 40px; }
+        .header .nav .nav__item:hover {
+          color: #83c5f7; }
+        .header .nav .nav__item .nav__link {
+          color: white;
+          font-size: 15px; }
   .div {
     display: flex;
     flex-direction: column-reverse;
@@ -243,7 +278,10 @@ body {
     .section__grid .grids {
       grid-template-columns: repeat(1, 3fr);
       grid-template-rows: repeat(3, 1fr);
-      grid-template-areas: "actual" " problema1" "problema2" "problema3";
+      grid-template-areas: "actual"
+ " problema1"
+ "problema2"
+ "problema3";
       margin-inline: 50px; }
     .section__grid .actual {
       width: 90%; }
