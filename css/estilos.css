@@ -285,16 +285,6 @@ cursor: pointer;
 
 }
 
-.solucion {
-    display: flex;
-    justify-content: row;
-    background-color: var(--plomo);
-    gap: 30px;
-    width: 100%;
-    justify-content: center;
-
-}
-
 .solucion1 {
     display: flex;
     justify-content: center;
@@ -814,7 +804,7 @@ width: 400px;
    height: 200px;
 
 }
-
+ 
 .nav__menu{
     flex-direction: column;
     align-items: center;

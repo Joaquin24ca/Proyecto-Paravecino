@@ -90,9 +90,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 2fr);
   grid-template-rows: repeat(3, 1fr);
-  grid-template-areas: " actual problema1 problema1 problema1   "
- "actual problema2 problema2 problema2"
- "actual problema3 problema3 problema3";
+  grid-template-areas: " actual problema1 problema1 problema1   " "actual problema2 problema2 problema2" "actual problema3 problema3 problema3";
   margin-left: 100px;
   gap: 10px; }
   .section__grid .grids .actual {
@@ -178,6 +176,223 @@ body {
   padding: 2rem;
   font-size: 15px; }
 
+.problemas {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--plomo);
+  height: 550px; }
+  .problemas .problemas__info {
+    margin-top: 130px;
+    font-size: 20px; }
+  .problemas .problemas__imagen {
+    width: 400px;
+    height: 450px;
+    margin-top: 40px;
+    box-shadow: 7px 7px rgba(0, 0, 0, 0.86);
+    margin-right: 30px; }
+
+.ofrecemos {
+  display: flex;
+  flex-direction: column;
+  margin-top: 120px;
+  height: 250px;
+  font-size: 30px;
+  background-color: white; }
+  .ofrecemos .ofrecemos__titulo {
+    color: var(--colorrosado); }
+
+.soluciones .solucion1, .soluciones .solucion2 {
+  display: flex;
+  justify-content: center;
+  gap: 300px;
+  margin-bottom: 50px;
+  width: 70%;
+  margin-inline: 200px;
+  background-color: #FFFFFF; }
+  .soluciones .solucion1:hover, .soluciones .solucion2:hover {
+    box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.516); }
+  .soluciones .solucion1 .solucion__div, .soluciones .solucion2 .solucion__div {
+    margin-top: 40px; }
+    .soluciones .solucion1 .solucion__div ul li, .soluciones .solucion2 .solucion__div ul li {
+      list-style: none; }
+    .soluciones .solucion1 .solucion__div .solucion__titulo, .soluciones .solucion2 .solucion__div .solucion__titulo {
+      color: var(--colorrosado); }
+  .soluciones .solucion1 .solucion__imagen, .soluciones .solucion2 .solucion__imagen {
+    width: 300px;
+    height: 250px;
+    margin: 15px 0; }
+
+.soluciones .solucion2:hover {
+  box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.516); }
+
+.soluciones .solucion2 .negro {
+  color: var(--colornegro); }
+
+.soluciones .solucion2 .solucion__div {
+  margin-top: 40px; }
+  .soluciones .solucion2 .solucion__div ul li {
+    list-style: none; }
+
+.soluciones .solucion2 .solucion__imagen {
+  width: 300px;
+  height: 250px;
+  margin: 15px 0; }
+
+.soluciones .solucion3 {
+  display: flex;
+  justify-content: center;
+  gap: 300px;
+  width: 70%;
+  margin-inline: 200px;
+  margin-bottom: 20px; }
+  .soluciones .solucion3:hover {
+    box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.516); }
+  .soluciones .solucion3 .solucion__div {
+    margin-top: 40px; }
+    .soluciones .solucion3 .solucion__div ul li {
+      list-style: none; }
+    .soluciones .solucion3 .solucion__div .solucion__titulo {
+      color: var(--colorrosado); }
+  .soluciones .solucion3 .solucion__imagen {
+    width: 300px;
+    height: 250px;
+    margin: 15px 0; }
+
+.contenedor {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  height: 600px; }
+  .contenedor .principal__tituloblanco {
+    color: white;
+    font-size: 50px;
+    display: inline-block;
+    margin-left: 40px; }
+  .contenedor .nosotros {
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    margin-top: 100px; }
+    .contenedor .nosotros .nosotros__rosado {
+      color: #FF0071; }
+    .contenedor .nosotros .nosotros__parrafo {
+      font-size: 30px;
+      margin-top: 30px; }
+
+.fondo {
+  background-color: var(--colornegro); }
+
+.quienes__contenedor .quienessomos {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  color: var(--colornegro);
+  font-family: 'Poppins', sans-serif;
+  justify-content: space-between; }
+  .quienes__contenedor .quienessomos .quienessomos__div {
+    margin: 200px 0px;
+    display: inline-block; }
+    .quienes__contenedor .quienessomos .quienessomos__div .quienessomos__parrafo {
+      color: var(--colornegro);
+      font-size: 20px; }
+
+.quienes__contenedor .video .video__deco {
+  width: 500px;
+  margin-left: 12px;
+  margin-top: 40px;
+  border-radius: 5px;
+  border: 10px solid var(--azul);
+  bottom: 300px;
+  height: 500px; }
+
+.fondo .contacto {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+  .fondo .contacto .article__text .textimage {
+    width: 50px;
+    transform: scale(0.5); }
+  .fondo .contacto .article__text .text__lado {
+    color: white;
+    font-size: 80px; }
+  .fondo .contacto .form {
+    width: 40%;
+    margin-top: 50px;
+    height: 100vh;
+    margin-left: 100px; }
+    .fondo .contacto .form .formulario {
+      width: 75%;
+      border: 2px dashed rgba(255, 255, 255, 0.442); }
+      .fondo .contacto .form .formulario input,
+      .fondo .contacto .form .formulario textarea {
+        width: 75%;
+        margin: 20px 50px;
+        font-size: 20px;
+        border: none;
+        padding: 5px; }
+      .fondo .contacto .form .formulario textarea {
+        max-width: 300px;
+        min-width: 300px;
+        max-height: 50px; }
+      .fondo .contacto .form .formulario #boton {
+        padding: 10px;
+        background-color: #043263;
+        color: white; }
+
+.main__grid {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 100px;
+  grid-template-areas: "aside naturalmente " "aside  mio   " "aside   forum" "piepagina piepagina";
+  gap: 10px;
+  margin-top: 15px; }
+  .main__grid .aside {
+    grid-area: aside;
+    background-color: var(--colornegro);
+    color: white; }
+    .main__grid .aside .aside__image {
+      width: 300px;
+      margin-inline: 140px;
+      margin-block: 20px;
+      box-shadow: 3px 3px white; }
+      .main__grid .aside .aside__image:hover {
+        transform: scale(1.2); }
+  .main__grid .naturalmente {
+    grid-area: naturalmente;
+    background-color: var(--colornegro);
+    color: white; }
+    .main__grid .naturalmente .naturalmente__image {
+      margin-inline: 200px; }
+      .main__grid .naturalmente .naturalmente__image:hover {
+        transform: scale(1.2); }
+  .main__grid .mio {
+    grid-area: mio;
+    background-color: var(--colornegro);
+    color: white;
+    height: 200px; }
+    .main__grid .mio .mio__image {
+      margin-inline: 250px;
+      height: 100px; }
+      .main__grid .mio .mio__image:hover {
+        transform: scale(1.2); }
+  .main__grid .forum {
+    grid-area: forum;
+    background-color: var(--colornegro);
+    color: white;
+    height: 350px; }
+    .main__grid .forum .forum__image {
+      height: 200px;
+      width: 250px;
+      margin-inline: 200px; }
+      .main__grid .forum .forum__image:hover {
+        transform: scale(1.2); }
+  .main__grid .piepagina {
+    grid-area: piepagina;
+    background-color: var(--colornegro);
+    color: white;
+    text-align: center;
+    padding: 2rem; }
+
 @media screen and (max-width: 340px) {
   .header {
     height: 200px;
@@ -210,10 +425,7 @@ body {
   .section__grid .grids {
     grid-template-columns: repeat(1, 3fr);
     grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: "actual"
- " problema1"
- "problema2"
- "problema3";
+    grid-template-areas: "actual" " problema1" "problema2" "problema3";
     margin-block: 400px;
     margin-inline: 50px;
     width: 150vw; }
@@ -278,10 +490,7 @@ body {
     .section__grid .grids {
       grid-template-columns: repeat(1, 3fr);
       grid-template-rows: repeat(3, 1fr);
-      grid-template-areas: "actual"
- " problema1"
- "problema2"
- "problema3";
+      grid-template-areas: "actual" " problema1" "problema2" "problema3";
       margin-inline: 50px; }
     .section__grid .actual {
       width: 90%; }
