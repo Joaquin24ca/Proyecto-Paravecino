@@ -91,7 +91,9 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 2fr);
   grid-template-rows: repeat(3, 1fr);
-  grid-template-areas: " actual problema1 problema1 problema1   " "actual problema2 problema2 problema2" "actual problema3 problema3 problema3";
+  grid-template-areas: " actual problema1 problema1 problema1   "
+ "actual problema2 problema2 problema2"
+ "actual problema3 problema3 problema3";
   margin-left: 100px;
   gap: 10px; }
   .section__grid .grids .actual {
@@ -340,7 +342,10 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 100px;
-  grid-template-areas: "aside naturalmente " "aside  mio   " "aside   forum" "piepagina piepagina";
+  grid-template-areas: "aside naturalmente "
+ "aside  mio   "
+ "aside   forum"
+ "piepagina piepagina";
   gap: 10px;
   margin-top: 15px; }
   .main__grid .aside {
@@ -432,7 +437,10 @@ body {
   .section__grid .grids {
     grid-template-columns: repeat(1, 3fr);
     grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: "actual" " problema1" "problema2" "problema3";
+    grid-template-areas: "actual"
+ " problema1"
+ "problema2"
+ "problema3";
     margin-block: 400px;
     margin-inline: 50px;
     width: 150vw; }
@@ -498,7 +506,10 @@ body {
     .section__grid .grids {
       grid-template-columns: repeat(1, 3fr);
       grid-template-rows: repeat(3, 1fr);
-      grid-template-areas: "actual" " problema1" "problema2" "problema3";
+      grid-template-areas: "actual"
+ " problema1"
+ "problema2"
+ "problema3";
       margin-inline: 50px; }
     .section__grid .actual {
       width: 90%; }
@@ -667,7 +678,8 @@ body {
     flex-direction: column;
     margin-inline: 80px; }
   .quienes__contenedor .quienessomos .quienessomos__div {
-    margin: 50px 10px; }
+    margin: 50px 10px;
+    padding-left: 50px; }
     .quienes__contenedor .quienessomos .quienessomos__div .quienessomos__parrafo {
       font-size: 20px; }
   .quienes__contenedor .quienessomos .quienes__image img {
@@ -710,7 +722,11 @@ body {
   .main__grid {
     grid-template-columns: repeat(1, 2fr);
     grid-template-rows: repeat(5, 1fr);
-    grid-template-areas: " aside" "naturalmente" "mio" "forum" "piepagina"; }
+    grid-template-areas: " aside"
+ "naturalmente"
+ "mio"
+ "forum"
+ "piepagina"; }
     .main__grid .aside {
       display: flex;
       flex-direction: column;
@@ -749,7 +765,11 @@ body {
   .main__grid {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    grid-template-areas: " aside" "naturalmente" "mio" "forum" "piepagina";
+    grid-template-areas: " aside"
+ "naturalmente"
+ "mio"
+ "forum"
+ "piepagina";
     margin-block: 80px; }
     .main__grid .aside {
       width: 100vw;
